@@ -10,7 +10,6 @@ on:
 
    - 'README.md'          # Ignora pushes para a branch 'main'
   
-  branches: [ "main" ]
   
   # Permite que o workflow seja executado manualmente a partir da interface do GitHub
   workflow_dispatch:
