@@ -1,15 +1,16 @@
-# Nome do Workflow: Visível na aba "Actions" do GitHub
 name: Meu Primeiro Workflow de CI
 
-# Gatilho (Trigger): Define quando o workflow será executado.
 on:
-  # Executa em todo push para a branch 'main'
+  
   push:
 
-  paths-ignore:
+    branches:
+      - main
 
-   - 'README.md'          # Ignora pushes para a branch 'main'
-  
+    paths-ignore:
+
+      - 'README.md'          # Ignora pushes para a branch 'main'
+    
   
   # Permite que o workflow seja executado manualmente a partir da interface do GitHub
   workflow_dispatch:
