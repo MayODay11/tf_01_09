@@ -6,9 +6,11 @@ on:
   # Executa em todo push para a branch 'main'
   push:
 
-  branches-ignore:
+  paths-ignore:
 
-   - README.md          # Ignora pushes para a branch 'main'
+   - 'README.md'          # Ignora pushes para a branch 'main'
+  
+  branches: [ "main" ]
   
   # Permite que o workflow seja executado manualmente a partir da interface do GitHub
   workflow_dispatch:
